@@ -13,11 +13,9 @@ def save_file() :
 def maker() :
     help_view = Toplevel(window)
     help_view.geometry("300x50")
-    help_view.title("founder")
+    help_view.title("Founder")
     lb = Label(help_view, text = "Juneau made this notepad")
     lb.pack()
-
-
 
 window = Tk()
 window.title("Notepad")
@@ -33,8 +31,8 @@ menu_1.add_command(label="exit", command=window.destroy)
 menu.add_cascade(label="File", menu=menu_1)
 
 menu_2 = Menu(menu, tearoff=0)
-menu_2.add_command(label="founder")
-menu.add_cascade(label="founder", menu=menu_2)
+menu_2.add_command(label="Founder", command=maker)
+menu.add_cascade(label="Founder", menu=menu_2)
 
 text_area = Text(window)
 window.grid_rowconfigure(0, weight=1)
